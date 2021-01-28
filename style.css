@@ -206,6 +206,41 @@ input{
     body{
         font-size: 09px;
     }
+    .footerO{
+        display: none;
+    }
+    
+   .section{
+       display: block;
+   }
+   .tarjetas, .aside{
+       width: 100%;
+   }
+   .footer-d{
+       display: block !important;
+       color: white;
+       text-align: center;
+   }
+   .noticias{
+       width: 41%;
+       height: 92%;
+       margin-top: 0px;
+   }
+   .aside{
+       height: 29%;
+   } 
+   .tarjeta1{
+       height: 92%;
+   }
+   .contenido{
+       height: 21%;
+   }
+   .texto1{
+       font-size: 13px;
+   }
+   .aside{
+    border-top: 1px solid transparent;
+   }
 }
 
 
@@ -216,4 +251,5 @@ footer{
     background: rgb(36, 36, 36);
     display: flex;
     justify-content: center;
+    color: white;
 }
