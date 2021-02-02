@@ -17,6 +17,7 @@
         </div>
         <div class="menu">
             <ul class="redes">
+                <li class="usuario"><i class="" id="nombreUser"></i></li>
                 <li><i class="fab fa-facebook-square"></i></li>
                 <li><i class="fab fa-youtube"></i></li>
                 <li><i class="fab fa-twitter"></i></li>
@@ -82,17 +83,39 @@
         </div>
      </div>
      <aside class="aside">
+         
          <div class="noticias">
              <h2 class="registrate">Registrate Aquí</h2>
-             <form action="">
-                 <input type="text" placeholder="Nombre*"><br>
-                 <input type="text" placeholder="Apellidos*"><br>
-                 <input type="email" placeholder="Email*"><br>
-                 <input type="password" placeholder="Password*"><br>
+             
+             <form action="" name="formulario" method="GET" id="form">
+                 <input type="text" placeholder="Nombre*" id="nombre" required><br>
+                 <input type="text" placeholder="Apellidos*" id="apellidos" required><br>
+                 <input type="email" placeholder="Email*" id="email" required><br>
+                 <input type="password" placeholder="Password*" id="password" required><br>
                  
                  <input class="enviar" type="submit" value="Enviar">
              </form>
          </div>
+        
+        <!-- <button class="btnPopUPAbrir" id="open">
+            Registrate Aqui
+          </button> -->
+          
+          <div id="modal_container" class="modal-container">
+            <div class="modal">
+                <h2 class="registrate aqui">Registrate Aquí</h2>
+                <form action="" name="formulario" method="GET" id="form">
+                    <input type="text" placeholder="Nombre*" id="nombre" required><br>
+                    <input type="text" placeholder="Apellidos*" id="apellidos" required><br>
+                    <input type="email" placeholder="Email*" id="email" required><br>
+                    <input type="password" placeholder="Password*" id="password" required><br>
+                    
+                    <input class="enviar" type="submit" value="Enviar">
+                </form>
+              <button id="close" class="btnPopUP">Cerrar</button>
+            </div>
+          </div>
+         
      </aside>
 
 
@@ -107,7 +130,7 @@
 
     
 
-
+<script src="script.js"></script>
     
 </body>
 </html>
